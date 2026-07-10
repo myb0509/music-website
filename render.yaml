@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: music-website-api
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TURSO_URL
+        sync: false
+      - key: TURSO_TOKEN
+        sync: false
+      - key: JWT_SECRET
+        sync: false

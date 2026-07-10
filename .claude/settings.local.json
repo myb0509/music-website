@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(timeout 5 node index.js)",
+      "Bash(node -e ' *)",
+      "Bash(node index.js)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(curl -s http://localhost:3001/api/songs)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"node index.js\")",
+      "Bash(rm -f music.db)",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/register -H \"Content-Type: application/json\" -d '{\"username\":\"melody\",\"email\":\"melody@music.com\",\"password\":\"123456\"}')",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/login -H \"Content-Type: application/json\" -d '{\"username\":\"melody\",\"password\":\"123456\"}')",
+      "Bash(node -c index.js)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(npx vite *)",
+      "Bash(node -e \"const fs=require\\('fs'\\);const h=Buffer.from\\([0xFF,0xFB,0x90,0x00]\\);const s=Buffer.alloc\\(417,0x55\\);fs.writeFileSync\\('test.mp3',Buffer.concat\\([h,s]\\)\\)\")",
+      "Bash(PORT=4000 node index.js)",
+      "Bash(curl -s http://localhost:5173/api/health)",
+      "Bash(curl -s http://localhost:5173/api/songs)",
+      "Bash(node -e \"process.stdin.on\\('data',d=>console.log\\('Songs count:',JSON.parse\\(d\\).length\\)\\)\")",
+      "Bash(curl -s -X PUT http://localhost:4000/api/songs/1 -H 'Content-Type: application/json' -d '{\"title\":\"新标题\",\"artist\":\"新艺术家\",\"album\":\"新专辑\"}')",
+      "Bash(node -e \"process.stdin.on\\('data',d=>{const j=JSON.parse\\(d\\);console.log\\(j.title,'-',j.artist,'-',j.album\\)}\\)\")",
+      "Bash(curl -s http://localhost:4000/api/health)"
+    ]
+  }
+}
